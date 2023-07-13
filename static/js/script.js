@@ -16,3 +16,10 @@ function addIncome(event) {
     clearInputFields('#income-form');
   }
 }
+
+// Add expense
+function addExpense(event) {
+  event.preventDefault();
+  
+
+}
