@@ -27,3 +27,15 @@ body {
     list-style-type: none;
     padding: 0;
   }
+
+  li {
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  
+  /* Form Styling */
+  form {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
