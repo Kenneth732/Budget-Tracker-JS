@@ -76,3 +76,20 @@ function updateExpenseList() {
     expenseList.appendChild(listItem);
   });
 }
+
+// Calculate total
+function calculateTotal(data) {
+  return data.reduce((total, item) => total + item.amount, 0);
+}
+
+// Clear input fields
+function clearInputFields(formId) {
+  document.querySelector(`${formId} #income-description`).value = '';
+  document.querySelector(`${formId} #income-amount`).value = '';
+  document.querySelector(`${formId} #expense-description`).value = '';
+  document.querySelector(`${formId} #expense-amount`).value = '';
+}
+
+// Event listeners
+document.querySelector('#income-form').addEventListener('submit', addIncome);
+document.querySelector('#expense-form').addEventListener('submit', addExpense);
