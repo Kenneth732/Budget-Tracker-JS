@@ -45,5 +45,8 @@ function updateBudget() {
 
 // Update income list
 function updateIncomeList() {
+  const incomeList = document.querySelector('#income-list');
+  incomeList.innerHTML = '';
+
 
 }
