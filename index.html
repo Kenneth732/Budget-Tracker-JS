@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <h1>Budget Tracker</h1>
+
+    <form id="income-form">
+        <h2>Add Income</h2>
+        <input type="text" id="income-description" placeholder="Description" required>
+        <input type="number" id="income-amount" placeholder="Amount" required>
+        <button type="submit">Add Income</button>
+      </form>
+    
+      <form id="expense-form">
+        <h2>Add Expense</h2>
+        <input type="text" id="expense-description" placeholder="Description" required>
+        <input type="number" id="expense-amount" placeholder="Amount" required>
+        <button type="submit">Add Expense</button>
+      </form>
+
+      <h2>Budget Summary</h2>
+      <div>
+        <p>Total Income: <span id="total-income">0</span></p>
+        <p>Total Expense: <span id="total-expenses">0</span></p>
+        <p>Budget <span id="budget">0</span></p>
+      </div>
+
+      <h2>Income List</h2>
+      <ul id="income-list"></ul>
+
+      <h2>Expense List</h2>
+      <ul id="expense-list"></ul>
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>
