@@ -31,3 +31,14 @@ function addExpense(event) {
     clearInputFields('#expense-form');
   }
 }
+
+// Update budget summary
+function updateBudget() {
+  const totalIncome = calculateTotal(incomeData);
+  const totalExpenses = calculateTotal(expenseData);
+  const budget = totalIncome - totalExpenses;
+
+  document.querySelector('#total-income').textContent = totalIncome;
+  document.querySelector('#total-expenses').textContent = totalExpenses;
+  document.querySelector('#budget').textContent = budget;
+}
