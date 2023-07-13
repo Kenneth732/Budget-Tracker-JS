@@ -50,3 +50,13 @@ body {
     gap: 10px;
     margin-bottom: 20px;
   }
+
+  #budget-summary p {
+    margin: 0;
+  }
+  
+  /* List Styling */
+  #income-list,
+  #expense-list {
+    margin-bottom: 20px;
+  }
