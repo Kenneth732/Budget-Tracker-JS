@@ -59,3 +59,8 @@ function updateIncomeList() {
     incomeList.appendChild(listItem);
   });
 }
+
+// Update expense list
+function updateExpenseList() {
+
+}
