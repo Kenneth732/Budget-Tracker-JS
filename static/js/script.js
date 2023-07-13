@@ -62,5 +62,8 @@ function updateIncomeList() {
 
 // Update expense list
 function updateExpenseList() {
+  const expenseList = document.querySelector('#expense-list');
+  expenseList.innerHTML = '';
+
 
 }
