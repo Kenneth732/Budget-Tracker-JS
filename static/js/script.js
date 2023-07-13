@@ -48,5 +48,14 @@ function updateIncomeList() {
   const incomeList = document.querySelector('#income-list');
   incomeList.innerHTML = '';
 
-
+  incomeData.forEach((income, index) => {
+    const listItem = document.createElement('li');
+    listItem.textContent = `${income.description}: $${income.amount}`;
+    listItem.addEventListener('click', () => {
+      incomeData.splice(index, 1);
+      updateBudget();
+      updateIncomeList();
+    });
+    incomeList.appendChild(listItem);
+  });
 }
