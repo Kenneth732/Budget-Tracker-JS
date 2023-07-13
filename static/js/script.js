@@ -42,3 +42,8 @@ function updateBudget() {
   document.querySelector('#total-expenses').textContent = totalExpenses;
   document.querySelector('#budget').textContent = budget;
 }
+
+// Update income list
+function updateIncomeList() {
+
+}
