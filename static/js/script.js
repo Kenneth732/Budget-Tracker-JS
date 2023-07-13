@@ -21,5 +21,13 @@ function addIncome(event) {
 function addExpense(event) {
   event.preventDefault();
   
+  const description = document.querySelector('#expense-description').value;
+  const amount = parseFloat(document.querySelector('#expense-amount').value);
 
+  if (description && amount) {
+    expenseData.push({ description, amount });
+    updateBudget();
+    updateExpenseList();
+    clearInputFields('#expense-form');
+  }
 }
