@@ -65,5 +65,14 @@ function updateExpenseList() {
   const expenseList = document.querySelector('#expense-list');
   expenseList.innerHTML = '';
 
-
+  expenseData.forEach((expense, index) => {
+    const listItem = document.createElement('li');
+    listItem.textContent = `${expense.description}: $${expense.amount}`;
+    listItem.addEventListener('click', () => {
+      expenseData.splice(index, 1);
+      updateBudget();
+      updateExpenseList();
+    });
+    expenseList.appendChild(listItem);
+  });
 }
