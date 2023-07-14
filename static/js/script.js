@@ -2,6 +2,9 @@
 let incomeData = [];
 let expenseData = [];
 
+// Load data from local storage
+function loadDataFromLocalStorage(){}
+
 // Add income
 function addIncome(event) {
   event.preventDefault();
