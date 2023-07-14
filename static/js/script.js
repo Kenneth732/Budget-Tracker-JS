@@ -2,26 +2,6 @@
 let incomeData = [];
 let expenseData = [];
 
-
-// Load data from local storage
-function loadDataFromLocalStorage() {
-    const storedIncomeData = localStorage.getItem('incomeData');
-    if (storedIncomeData) {
-      incomeData = JSON.parse(storedIncomeData);
-    }
-  
-    const storedExpenseData = localStorage.getItem('expenseData');
-    if (storedExpenseData) {
-      expenseData = JSON.parse(storedExpenseData);
-    }
-  }
-
-  // Save data to local storage
-function saveDataToLocalStorage() {
-    localStorage.setItem('incomeData', JSON.stringify(incomeData));
-    localStorage.setItem('expenseData', JSON.stringify(expenseData));
-  }
-
 // Add income
 function addIncome(event) {
   event.preventDefault();
