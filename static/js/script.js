@@ -2,8 +2,19 @@
 let incomeData = [];
 let expenseData = [];
 
+
 // Load data from local storage
-function loadDataFromLocalStorage(){}
+function loadDataFromLocalStorage() {
+    const storedIncomeData = localStorage.getItem('incomeData');
+    if (storedIncomeData) {
+      incomeData = JSON.parse(storedIncomeData);
+    }
+  
+    const storedExpenseData = localStorage.getItem('expenseData');
+    if (storedExpenseData) {
+      expenseData = JSON.parse(storedExpenseData);
+    }
+  }
 
 // Add income
 function addIncome(event) {
