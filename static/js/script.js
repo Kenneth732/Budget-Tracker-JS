@@ -16,6 +16,12 @@ function loadDataFromLocalStorage() {
     }
   }
 
+  // Save data to local storage
+function saveDataToLocalStorage() {
+    localStorage.setItem('incomeData', JSON.stringify(incomeData));
+    localStorage.setItem('expenseData', JSON.stringify(expenseData));
+  }
+
 // Add income
 function addIncome(event) {
   event.preventDefault();
